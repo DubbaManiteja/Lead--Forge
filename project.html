@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadForge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        table th {
+            background-color: #333;
+            color: white;
+        }
+        .btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LeadForge Automation</h1>
+    </header>
+    <nav>
+        <a href="#lead-listing">Lead Listing</a>
+        <a href="#lead-details">Lead Details</a>
+        <a href="#lead-management">Lead Management</a>
+        <a href="#dashboard">Dashboard</a>
+    </nav>
+    <div class="container">
+        <section id="lead-listing" class="card">
+            <h2>Lead Listing</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>Status</th>
+                        <th>Source</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>john.doe@example.com</td>
+                        <td>New</td>
+                        <td>Facebook</td>
+                        <td><button class="btn">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>jane.smith@example.com</td>
+                        <td>Contacted</td>
+                        <td>Google</td>
+                        <td><button class="btn">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="lead-details" class="card">
+            <h2>Lead Details</h2>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> john.doe@example.com</p>
+            <p><strong>Status:</strong> New</p>
+            <p><strong>Source:</strong> Facebook</p>
+            <button class="btn">Update Status</button>
+        </section>
+        <section id="lead-management" class="card">
+            <h2>Lead Management</h2>
+            <button class="btn">Import Leads</button>
+            <button class="btn">Export Leads</button>
+            <button class="btn">Automate Follow-Up</button>
+        </section>
+        <section id="dashboard" class="card">
+            <h2>Dashboard</h2>
+            <p>Total Leads: 200</p>
+            <p>Contacted Leads: 50</p>
+            <p>Pending Leads: 150</p>
+        </section>
+    </div>
+</body>
+</html>
